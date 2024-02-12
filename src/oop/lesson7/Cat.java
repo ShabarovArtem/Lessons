@@ -17,8 +17,20 @@ public void destroySofa(String sofaOwner){
 
 }
 
-public String hunt() {
-        return "Мышь\n";
+public String hunt(boolean isDay) {
+        if (isDay){
+            return "Мышь\n";
+        }
+            return "Сова\n";
+
 }
+    public String hunt(boolean isDay,boolean success){
+        if (success){if (isDay){
+            return "Мышь\n";
+        }
+            return "Сова\n";
+
+        }   return "ничего\n";
+    }
 }
 
