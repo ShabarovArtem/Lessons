@@ -1,6 +1,5 @@
-package Lesson6;
+package Lessons.Lesson6;
 
-import javax.swing.*;
 import java.util.Arrays;
 
 public class StringMethod {

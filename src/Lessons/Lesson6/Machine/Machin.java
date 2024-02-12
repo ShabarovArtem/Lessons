@@ -1,4 +1,4 @@
-package Machine;
+package Lessons.Lesson6.Machine;
 
 public class Machin {
     public static void main(String[] args) {

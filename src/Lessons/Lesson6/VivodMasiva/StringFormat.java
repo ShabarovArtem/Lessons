@@ -1,4 +1,4 @@
-package VivodMasiva;
+package Lessons.Lesson6.VivodMasiva;
 
 public class StringFormat {
     public static void main(String[] args) {

@@ -1,6 +1,4 @@
-package VivodMasiva;
-
-import java.util.Arrays;
+package Lessons.Lesson6.VivodMasiva;
 
 public class MultiArray {
     public static void main(String[] args) {
