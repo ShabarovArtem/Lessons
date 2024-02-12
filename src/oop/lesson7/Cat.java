@@ -1,5 +1,7 @@
 package oop.lesson7;
 
+import java.util.Arrays;
+
 public class Cat {
     //абстракция - выделение нужных свойств
     String color;
@@ -31,6 +33,9 @@ public String hunt(boolean isDay) {
             return "Сова\n";
 
         }   return "ничего\n";
+    }
+    public void feed(String ...product){
+        System.out.printf("Кот поел: %s\n", Arrays.toString(product));
     }
 }
 

@@ -1,10 +1,17 @@
 package Book.book;
 
 public class Book {
-    String bookName = "Marten Idon";
-    String bookAutrer = "Djeck London";
-    int bookPages = 40;
-    Boolean bookDocument = true;
+    String bookName;
+    String bookAutrer;
+    int bookPages;
+    Boolean bookDocument;
+
+    public Book(String bookName, String bookAutrer, int bookPages, Boolean bookDocument) {
+        this.bookName = bookName;
+        this.bookAutrer = bookAutrer;
+        this.bookPages = bookPages;
+        this.bookDocument = bookDocument;
+    }
 
     public void setBookName(){
     System.out.println(bookPages);

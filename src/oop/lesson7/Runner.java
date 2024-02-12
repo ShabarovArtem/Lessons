@@ -13,5 +13,9 @@ public class Runner {
 
         String animal = cat.hunt(true,false);
         System.out.println(animal);
+
+
+
+        cat.feed("рыба","Корм");
     }
 }
