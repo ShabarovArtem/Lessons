@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Cat {
     //абстракция - выделение нужных свойств
-    String color;
-    double weight;
-    String ownerName;
+    private String color;
+    private double weight;
+    private String ownerName;
 
     public Cat(String colorName, double weightCat, String owner){
         this.color = colorName;
@@ -34,8 +34,8 @@ public String hunt(boolean isDay) {
 
         }   return "ничего\n";
     }
-    public void feed(String ...product){
-        System.out.printf("Кот поел: %s\n", Arrays.toString(product));
+    public void feed(String giver, String ...product){
+        System.out.printf("Человек %s даёт еду.Кот поел: %s\n", giver, Arrays.toString(product));
     }
 }
 
