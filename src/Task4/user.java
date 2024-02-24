@@ -2,36 +2,34 @@ package Task4;
 
 import equals_and_hashcode.Child;
 
+import java.util.Objects;
+
 public class user {
     private String login;
-    private int password;
+    private String password;
 
-    public user(String login, int password) {
+    public user(String login, String password) {
         this.login = login;
         this.password = password;
     }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public int getPassword() {
-        return password;
+    @Override
+    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (o == null || getClass() != o.getClass()) return false;
+//        user user = (user) o;
+//        return password == user.password && Objects.equals(login, user.login);
+        if (o == null) {
+            return false;
+        } if (o instanceof user anotheruser){
+            return this.login.equals(anotheruser.login) && this.password.equals(anotheruser.password);
+        }
+        return false;
     }
 
     @Override
     public int hashCode() {
-        return this.getLogin().length();
+        return this.login.hashCode();
     }
 
-    @Override
-    public boolean equals(Object obj) {
-        if(obj == null){
-            return false;
-        }
-        if (obj instanceof user user2){
-            return this.getLogin().equals(user2.getLogin()) && this.getPassword() == user2.getPassword();
-        }
-        return false;
-    }
 }
